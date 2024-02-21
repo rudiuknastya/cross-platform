@@ -1,3 +1,5 @@
+package lab1;
+
 public class EndiannessConverter {
     public static int convertEndianness(int number){
         byte[] bytes = new byte[Integer.BYTES];
