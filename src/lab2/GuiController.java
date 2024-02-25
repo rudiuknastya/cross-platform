@@ -3,16 +3,16 @@ package lab2;
 import javax.swing.table.DefaultTableModel;
 import java.util.List;
 
-public class Controller {
+public class GuiController {
     private Model model;
     private GuiView guiView;
 
-    public Controller(Model model, GuiView guiView) {
+    public GuiController(Model model, GuiView guiView) {
         this.model = model;
         this.guiView = guiView;
-        initializeController();
+        initializeButton();
     }
-    private void initializeController(){
+    private void initializeButton(){
         guiView.getSaveButton().addActionListener(e -> saveUser());
     }
     private void saveUser(){
